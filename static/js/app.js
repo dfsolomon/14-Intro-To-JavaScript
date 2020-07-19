@@ -45,8 +45,6 @@ data.forEach(function(alienReport) {
   var row = tbody.append("tr");
   Object.entries(alienReport).forEach(function([key, value]) {
     console.log(key, value);
-    // Append a cell to the row for each value
-    // in the weather report object
     var cell = row.append("td").html(value);
     cell.text(value);
   });
